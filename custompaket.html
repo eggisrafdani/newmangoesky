@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangoesky</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.fontawesome.com/18c2a26d47.js"></script>  
+</head>
+<body>
+    <div class="mitra">
+        <header>
+            <div class="header-wrapper">
+                <div class="brand-logo">
+                    <img src="asset/mango-logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <a href="#" class="home">BERANDA</a>
+                    <a href="#">PRODUK</a>
+                    <a href="#">BANTUAN</a>
+                    <a href="#" class="mitra">MITRA</a>
+                </div>
+            </div>
+        </header>
+        <!-- <div class="top-wrapper">
+            <div class="conteiner content-wrapper">
+                <div class="left-content">
+                    <div class="heading">
+                        <h1>Kami akan Melayani Anda</h1>
+                    <h1>dengan Sepenuh Hati</h1>
+                    </div>
+                    <div class="sub-heading">
+                        <p>Apabila terjadi kendala pada layanan mangoeskymu, call center</p>
+                        <p>kami siap siaga membantumu dalam dalam 24 jam penuh.</p>
+                        <p>Memberikan layanan terbaik dan kepuasan bagi pelanggan</p>
+                        <p>adalah bukti komitmen kami.</p>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <img src="asset/top-header.png" alt="">
+                </div>
+            </div>
+        </div> -->
+        <section class="custom-wrapper container">
+            <div class="cover-custom">
+                <div class="heading">
+                    <h2>Informasi custom produk layanan dan kuota</h2>
+                    <p>
+                        Anda tidak perlu khawatir dengan kebutuhan diluar paket produk dan kuota yang kami sediakan. Sebagai komitmen pelayanan terbaik dari kami, kami juga memberikan peluang custom produk layanan dan kuota. Silahkan isi form berikut untuk informasi kebutuhan pelanggan dan kami akan senantiasa membantu anda.
+                    </p>
+                </div>
+                <div class="form-custom">
+                        <div class="heading-form">
+                            <h2>Form custom paket</h2>
+                            <p>Isi form custom sesuai kebutuhan Anda</p>
+                        </div>
+                        <div class="content-form">
+                            <label for="">Nama PIC</label>
+                            <input type="text">
+                            <label for="">Kebutuhan custom</label>
+                            <select name="" id="">
+                                <option value="">Produk mangoesky</option>
+                                <option value="">Kuota</option>
+                                <option value="">Perpanjangan layanan</option>
+                                <option value="">Produk telkomsat lainnya</option>
+                            </select>
+                            <label for="">Customer ID</label>
+                            <input type="text">
+                            <label for="">No Telepon</label>
+                            <input type="number">
+                            <label for="">Alamat email</label>
+                            <input type="text">
+                            <label for="">Detail kebutuhan</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="btn-form">
+                            <a href="#" class="btn-tuutup">Tutup</a>
+                            <a href="#" class="btn-kirim">Kirim</a>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="cover-footer container">
+                <div class="call-center">
+                    <h3>Call center</h3>
+                    <p>1500832</p>
+                </div>
+                <div class="call-center">
+                    <h3>Whatsapp</h3>
+                    <p>0811-974-9971 (Sales)</p>
+                    <p>0811-9699-869 (Care center)</p>
+                </div>
+                <div class="call-center">
+                    <h3>Email</h3>
+                    <p>Sales (sales.mangoesky@telkomsat.co.id)</p>
+                </div>
+                <div class="call-center">
+                    <h3>Layanan sms</h3>
+                    <p>0811-1666-727</p>
+                    <p>1081-2222-09977</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script>
+        const buttonRight = document.getElementById('slideRight');
+        const buttonLeft = document.getElementById('slideLeft');
+
+        buttonRight.onclick = function () {
+        document.getElementById('content').scrollLeft += 200;
+        };
+        buttonLeft.onclick = function () {
+        document.getElementById('content').scrollLeft -= 200;
+        };  
+    </script>
+</body>
+</html>
