@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+body{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(90deg,#F6F8FD 29px,transparent 1%) center,linear-gradient(#F6F8FD 29px,transparent 1%) center,#bfc5d3;
+    background-size: 30px 30px;
+    // background-color: #fff;
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+iframe{
+    border-radius: 8px;
+}
+h1,h2{
+    color: #333;
+}
+
+.header-wrapper{
+    background-color: #fff;
+    box-shadow: 0 1px 20px rgba(0,0,0,.1);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 99;
+    .brand-logo{
+
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(4,100px);
+        column-gap: 20px;
+        a{
+            color: #333;
+        }
+    }
+}
+
+.breadcrumb{
+    background-color: #fff;
+    width: 100%;
+    .cover-breadcrumb{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,100px);
+        margin-top: 80px;
+        height: 40px;
+        align-items: center;
+    }
+}
+
+footer{
+    width: 100%;
+    height:300px;
+    background-color: rgb(6, 11, 53);
+    color:#fff;
+    padding: 60px 0;
+    position: relative;
+    bottom: 0;
+    .cover-footer{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 20px;
+        .logo-brand-footer{
+            img{
+            
+            }
+        }
+        .content-footer{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+            p{
+                font-size: .9rem;
+                color:#ff9151;
+                font-weight: normal;
+            }
+        }
+    }
+    
+}
