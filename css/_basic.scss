@@ -86,7 +86,7 @@ footer{
     bottom: 0;
     .cover-footer{
         display: grid;
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: auto 1fr;
         column-gap: 20px;
         .logo-brand-footer{
             img{
@@ -95,11 +95,13 @@ footer{
         }
         .content-footer{
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+            grid-template-columns: .8fr 1fr 1.2fr 1fr;
+            
             p{
                 font-size: .9rem;
                 color:#ff9151;
                 font-weight: normal;
+                justify-self:center ;
             }
         }
     }

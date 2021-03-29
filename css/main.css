@@ -104,8 +104,8 @@ footer {
 footer .cover-footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr auto;
-      grid-template-columns: auto 1fr auto;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
   -webkit-column-gap: 20px;
           column-gap: 20px;
 }
@@ -113,14 +113,16 @@ footer .cover-footer {
 footer .cover-footer .content-footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(30%, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  -ms-grid-columns: .8fr 1fr 1.2fr 1fr;
+      grid-template-columns: .8fr 1fr 1.2fr 1fr;
 }
 
 footer .cover-footer .content-footer p {
   font-size: .9rem;
   color: #ff9151;
   font-weight: normal;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .top-wrapper .content-wrapper {
@@ -561,6 +563,25 @@ section.paket-detail .cover-paket-detail .des-paket h2 {
   margin-bottom: 20px;
 }
 
+section.paket-detail .cover-paket-detail .des-paket table {
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+section.paket-detail .cover-paket-detail .des-paket table th {
+  background-color: #ff9151;
+  padding: 10px;
+}
+
+section.paket-detail .cover-paket-detail .des-paket table tr td {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: .9rem;
+  padding: 10px;
+  text-align: center;
+}
+
 section.paket-detail .cover-paket-detail .des-paket p.paket-detail {
   margin-bottom: 20px;
 }
@@ -589,16 +610,18 @@ section.paket-detail .cover-paket-detail .btn-detail-paket {
 
 section.paket-detail .cover-paket-detail .btn-detail-paket a {
   display: inline-block;
-  width: 150px;
+  width: 160px;
   text-align: center;
   padding: 12px 24px;
-  background-color: #afd2ff;
+  border: 1px solid #afd2ff;
   color: #333;
   border-radius: 6px;
+  color: #afd2ff;
+  font-weight: 600;
 }
 
 section.paket-detail .cover-paket-detail .btn-detail-paket a.btn-beli {
-  background-color: #ff9151;
+  background-color: #29CA90;
 }
 
 section.mitra-wrapper {
@@ -938,5 +961,237 @@ section.custom-wrapper .cover-custom .form-custom .btn-form a {
 section.custom-wrapper .cover-custom .form-custom .btn-form a.btn-kirim {
   background-color: #29CA90;
   color: #fff;
+}
+
+section.topup-wrapper {
+  margin-top: 80px;
+  padding: 60px 0;
+}
+
+section.topup-wrapper .cover-topup {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .5fr 1fr;
+      grid-template-columns: .5fr 1fr;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+section.topup-wrapper .cover-topup .heading {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20px;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
+section.topup-wrapper .cover-topup .heading p {
+  color: #5e5f63;
+}
+
+section.topup-wrapper .cover-topup .content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+section.topup-wrapper .cover-topup .content-wrapper .card {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+section.topup-wrapper .cover-topup .content-wrapper .card .card-img {
+  width: 100%;
+}
+
+section.topup-wrapper .cover-topup .content-wrapper .card .card-img img {
+  width: 100%;
+}
+
+section.topup-wrapper .cover-topup .content-wrapper .card .card-des {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin: 10px 10px 20px;
+}
+
+section.topup-wrapper .cover-topup .content-wrapper .card .card-des .judul {
+  font-weight: 500;
+}
+
+section.topup-wrapper .cover-topup .content-wrapper .card .card-des .harga {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ff9151;
+}
+
+section.topup-wrapper .cover-topup .content-wrapper .card a {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 100%;
+  padding: 10px 12px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+section.tutorial-topup {
+  background-color: #dfedff;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper {
+  padding: 60px 0;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .heading {
+  margin-bottom: 40px;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card {
+  background-color: #fff;
+  border-radius: 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .judul-mitra {
+  padding: 10px;
+  background-color: #98c200;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .judul-mitra.reseller {
+  background-color: #527eff;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .judul-mitra.distributor {
+  background-color: #ff1b5f;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra {
+  padding-bottom: 20px;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra .des-mitra {
+  margin-bottom: 10px;
+  height: 120px;
+  border-bottom: 0.8px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra .benefit {
+  height: 150px;
+  border-bottom: 0.8px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra .benefit p {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra .benefit ul {
+  list-style: none;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra .benefit ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra .syarat {
+  margin-bottom: 10px;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra .syarat p {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra .syarat ol {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  row-gap: 10px;
+  list-style: none;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra .syarat ol li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .9rem;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .content-mitra .syarat ol li img {
+  width: 18px;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .btn-mitra {
+  bottom: 0;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .btn-mitra a {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #333;
+  width: 100%;
+  border-radius: 6px;
+  padding: 12px 24px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-weight: 600;
+}
+
+section.tutorial-topup .tutorial-topup-wrapper .cover-tutorial-topup .card .btn-mitra a:hover {
+  background-color: #ff9151;
+  color: #fff;
+  border: 1px solid #ff9151;
 }
 /*# sourceMappingURL=main.css.map */
