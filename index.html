@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mangoesky</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="css/main.css">
     <script src="https://use.fontawesome.com/18c2a26d47.js"></script>  
 </head>
-<body>
+<body id="home-tes">
     <div class="home">
         <header>
             <div class="header-wrapper">
@@ -23,25 +25,44 @@
                 </div>
             </div>
         </header>
-        <div class="top-wrapper">
+        <!-- <div class="top-wrapper">
             <div class="conteiner content-wrapper">
-                <div class="left-content">
-                    <div class="heading">
-                        <h1>Kami akan Melayani Anda</h1>
-                    <h1>dengan Sepenuh Hati</h1>
-                    </div>
-                    <div class="sub-heading">
-                        <p>Apabila terjadi kendala pada layanan mangoeskymu, call center</p>
-                        <p>kami siap siaga membantumu dalam dalam 24 jam penuh.</p>
-                        <p>Memberikan layanan terbaik dan kepuasan bagi pelanggan</p>
-                        <p>adalah bukti komitmen kami.</p>
-                    </div>
-                </div>
-                <div class="right-content">
-                    <img src="asset/top-header.png" alt="">
-                </div>
+                <img src="asset/banner1.jpg" alt="">
+                <img src="asset/banner2.jpg" alt="">
+                <img src="asset/banner3.jpg" alt="">
             </div>
-        </div>
+        </div> -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="asset/banner1.jpg" alt="Los Angeles" width="1100" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="asset/banner2.jpg" alt="Chicago" width="1100" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="asset/banner3.jpg" alt="New York" width="1100" height="500">
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+
         <section class="paket-wrapper container">
             <div class="heading">
                 <h2>Paket layanan</h2>
@@ -147,7 +168,7 @@
                 </div>
                 <div class="cover-slider">                
                     
-                    <div class="cover-gambar-kenapa" id="content">
+                    <div class="cover-gambar-kenapa" id="content-kenapa">
                         <div class="card" id="first">
                             <div class="card-image">
                                 <img src="asset/cardkenapa-kecepatan.png" alt="">
@@ -193,9 +214,9 @@
                 </div>
                 <div class="cover-content-video">                
                     <div class="main-video cover-video-title">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0Io7JUxjLxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0BBcRb-iY38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="judul-video">
-                            <p>Company profile</p>
+                            <p>Space for everyone</p>
                         </div>
                     </div>
                     <div class="second-video">
@@ -240,7 +261,8 @@
                 <div class="des-download">
                     <div class="heading">
                         <h2>Download aplikasi mymangoesky</h2>
-                        <p>Dengan mendownload aplikasi mymangoesky akan mempermudah Anda untuk melakukan topup dan manajemen kuota Anda</p>
+                        <p>Dengan mendownload aplikasi mymangoesky akan mempermudah</p>
+                        <p>Anda untuk melakukan topup dan manajemen kuota Anda</p>
                         <p>Download aplikasi Mymangoesky sekarang juga !</p>
                         
                     </div>
@@ -271,24 +293,30 @@
                         <p>1500832</p>
                     </div>
                     <div class="call-center">
+                        <h3>Layanan sms</h3>
+                        <p>0811-1666-727</p>
+                        <p>1081-2222-09977</p>
+                    </div>
+                    <div class="call-center">
                         <h3>Whatsapp</h3>
                         <p>0811-974-9971 (Sales)</p>
                         <p>0811-9699-869 (Care center)</p>
                     </div>
                     <div class="call-center">
                         <h3>Email</h3>
-                        <p>Sales (sales.mangoesky@telkomsat.co.id)</p>
+                        <p>sales.mangoesky@telkomsat.co.id</p>
                     </div>
-                    <div class="call-center">
-                        <h3>Layanan sms</h3>
-                        <p>0811-1666-727</p>
-                        <p>1081-2222-09977</p>
-                    </div>
+                    
                 </div>
             </div>
         </footer>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    </div>
+ 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/style.js"></script>
 </body>
 </html>
+    
